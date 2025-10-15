@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎙️ Audio Meeting Manager 🗓️
 
-## Getting Started
+Welcome to **Audio Meeting Manager**, the ultimate app to organize your meetings effortlessly! 🚀  
 
-First, run the development server:
+Upload your audio recordings, get **automatic transcriptions**, **summaries**, and **deadlines**, and even **sync them with Google Calendar**! 📝✨
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- 🎧 **Upload WAV audio files** of your meetings
+- 📝 **Automatic transcription** with **Whisper**
+- 💡 **Summarization & Deadline extraction** using GPT models
+- 📅 **Sync deadlines directly to Google Calendar** via **Google Cloud API**
+- 🔐 **Secure authentication** using **Google OAuth 2.0**
+- 🔥 **Database backend** powered by **Firebase** for real-time storage
+- ⚡ **Fast API server** for audio processing and AI computations
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🏗️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** Next.js + Firebase Auth (Google OAuth 2.0)
+- **Styling:** Tailwind CSS + ShadCN
+- **Backend / API:** FastAPI  
+- **Database:** Firebase (BaaS)  
+- **ML Models:**  
+  - Whisper → Speech-to-text transcription  
+  - GPT small → Summarization & deadline extraction  
+- **Calendar Integration:** Google Cloud API  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 How It Works
 
-## Deploy on Vercel
+1. 🎤 Upload your meeting audio (WAV format) in the dashboard.  
+2. 🤖 FastAPI server uses **Whisper** to transcribe the audio with timestamps.  
+3. 🧠 GPT model analyzes the transcript to generate a **concise summary** and **extract deadlines**.  
+4. 📆 Deadlines are added to your **Google Calendar** automatically.  
+5. 💾 All data (transcripts, summaries, deadlines) is stored in **Firebase** for easy access anytime.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚡ Getting Started
+
+1. Clone this repo:  
+   ```bash
+   git clone https://github.com/yourusername/audio-meeting-manager.git
+   cd audio-meeting-manager
