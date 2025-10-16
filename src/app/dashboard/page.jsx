@@ -111,7 +111,7 @@ export default function Dashboard() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await fetch(process.env.NEXT_PUBLIC_ML_URL {
+      const res = await fetch(process.env.NEXT_PUBLIC_ML_URL,{
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
